@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Claude CLI
-RUN npm install -g @anthropic-ai/claude-cli
+RUN npm install -g @anthropic-ai/claude-code
 
 # Switch back to the coder user
 USER coder
